@@ -8,10 +8,6 @@ class InstagramClient
     fetch_recent_media
   end
 
-  def count
-    @recent_media_items.count
-  end
-
   #######
   private
   #######
