@@ -2,6 +2,9 @@ default: &default
   application_name: ""
   server_host: "localhost:3000"
   host_url: "http://localhost:3000"
+  instagram:
+    client_id: d47e02ea43814c42adf1f11ffee4ad98
+    client_secret: 7427f8084fd04086a90cb956ceab87e7
 
 development:
   <<: *default
@@ -11,3 +14,6 @@ test:
 
 production:
   <<: *default
+  instagram:
+    client_id: 1b74c1b027d140ba9914466f8fd92b3e
+    client_secret: de99ac8345e54302bb04c8ced74be626

@@ -11,6 +11,16 @@ require 'database_cleaner'
 
 SimpleCov.start
 
+AUTHHASH = {
+  credentials: {token: "new-token-123456"}, provider: "instagram", uid: "122221112222",
+  extra: {raw_info: {
+    username: 'mostafa-ragab'
+    }}
+}
+
+OmniAuth.config.test_mode = true
+OmniAuth.config.mock_auth[:instagram] = OmniAuth::AuthHash.new(AUTHHASH)
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
