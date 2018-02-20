@@ -278,6 +278,6 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 
   # instagram scopes list # https://www.instagram.com/developer/authorization/
-  config.omniauth :instagram, AppConfig.instagram["client_id"], AppConfig.instagram["client_secret"], :scope => "basic"
+  config.omniauth :instagram, AppConfig.instagram["client_id"], AppConfig.instagram["client_secret"], :scope => "basic public_content"
 
 end

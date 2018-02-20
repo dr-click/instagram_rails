@@ -1,0 +1,35 @@
+<main role="main">
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <% @media_items.each do |media_item| %>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" src="<%= media_item.low_resolution_url %>">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a type="button" href="<%= media_item.standard_resolution_url %>" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <% unless @media_items.any? %>
+          <div class="col-md-12">
+            <div class="card mb-12 box-shadow">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <h2>No Media items were found</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</main>

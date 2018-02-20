@@ -4,6 +4,8 @@ class Authentication < ApplicationRecord
 
   belongs_to :user
 
+  scope :instagram, -> {where(provider: :instagram)}
+
   def update_info(auth)
     self.token = auth[:credentials][:token]
   end

@@ -19,6 +19,10 @@ class User < ApplicationRecord
     self.devise_pwd = true
   end
 
+  def instagram_token
+    self.authentications.instagram.first.try(:token)
+  end
+
   def email_required?
     false
   end

@@ -38,6 +38,8 @@ gem 'jquery-rails'
 gem 'omniauth' # OmniAuth is a flexible authentication system utilizing Rack middleware
 gem 'devise' # Flexible authentication solution for Rails with Warden
 gem 'omniauth-instagram' # OmniAuth strategy for Instagram.
+gem 'instagram', :git => 'git://github.com/Instagram/instagram-ruby-gem.git' # The official gem for the Instagram API.
+gem "faraday", "~> 0.8.9" # Required by Instagram Gem
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -53,6 +55,8 @@ group :development, :test do
   gem 'poltergeist'
   gem 'phantomjs', :require => 'phantomjs/poltergeist'
   gem 'database_cleaner'
+  gem 'rails-controller-testing' #Brings back `assigns` and `assert_template` to your Rails tests
+  gem 'webmock' # Library for stubbing and setting expectations on HTTP requests in Ruby.
 end
 
 group :development do
