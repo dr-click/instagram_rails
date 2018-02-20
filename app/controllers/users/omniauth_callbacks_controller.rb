@@ -12,6 +12,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     signin_with_social_network(user, :signed_in, provider)
   end
 
+  def failure
+    redirect_to root_path, alert: params[:error]
+  end
+
   #######
   private
   #######
