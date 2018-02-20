@@ -56,3 +56,11 @@
     > webmock: Library for stubbing and setting expectations on HTTP requests in Ruby
 
     > rails-controller-testing: Library for stubbing and setting expectations on HTTP requests in Ruby
+
+---
+
+### Changes todo later
+
+  * Handle Instagram videos
+  * Update the UI and include video player
+  * Include Instagram likes
