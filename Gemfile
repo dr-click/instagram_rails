@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap', '~> 4.0.0' # Bootstrap 4 Ruby Gem for Rails / Sprockets and Compass
 gem 'jquery-rails'
+gem 'omniauth' # OmniAuth is a flexible authentication system utilizing Rack middleware
+gem 'devise' # Flexible authentication solution for Rails with Warden
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
