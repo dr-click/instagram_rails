@@ -15,5 +15,5 @@ test:
 production:
   <<: *default
   instagram:
-    client_id: 1b74c1b027d140ba9914466f8fd92b3e
-    client_secret: de99ac8345e54302bb04c8ced74be626
+    client_id: 6d8fe16d9eb944f49b41faad2c2508ec
+    client_secret: 5ef23251c0ed4d9a80f6b5abc22da23e
